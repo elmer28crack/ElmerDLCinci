@@ -1,0 +1,111 @@
+div.diuno {
+  background-color: rgb(9, 255, 0);
+      color: black(255, 255, 255);
+      padding: 20px;
+      flex: 1 1 200px;
+      text-align: center;
+      border-radius: 50px;
+    
+}
+
+div.didos{
+  background-color: rgb(255, 0, 0);
+      color: black(255, 255, 255);
+      padding: 20px;
+      flex: 1 1 200px;
+      text-align: center;
+      border-radius: 50px;
+      transition: transform 0.3s ease;
+}
+
+div.ditre{
+  background-color: rgb(255, 255, 255);
+      color: rgb(0, 0, 0);
+      padding: 20px;
+      flex: 1 1 200px;
+      text-align: center;
+      border-radius: 50px;
+      transition: transform 0.3s ease;
+}
+
+
+body{
+background-color: orange;
+
+    color: black;
+}
+
+footer{
+    display: FLEX;
+flex-direction: column;
+align-content: center;
+background-color: aqua;
+
+}
+
+.titu{
+  border-color: black;
+border-style: outset;
+   background-color: aqua;
+ 
+      color: rgb(255, 255, 255);
+      padding: 10px;
+      flex: 1 1 200px;
+      text-align: center;
+      border-radius: 50px;
+      transition: transform 0.3s ease;
+        text-shadow: 4px 4px 10px rgba(0,0,0,0.8);
+
+
+}
+
+.pie{
+
+   background-color: aqua;
+      color: rgb(255, 255, 255);
+      padding: 20px;
+      flex: 1 1 200px;
+      text-align: center;
+      border-radius: 50px;
+      transition: transform 0.3s ease;
+
+
+}
+h3{
+
+border-color: black;
+border-style: outset;
+    background-color: aqua;
+      color: rgb(255, 255, 255);
+      padding: 10px;
+      flex: 1 1 200px;
+      text-align: center;
+      border-radius: 50px;
+      transition: transform 0.3s ease;
+    
+}
+
+  .contenedor {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+     
+      padding: 20px;
+      gap: 20px;
+    }
+
+      .caja {
+      background-color: aqua;
+      color: white;
+      padding: 20px;
+      flex: 1 1 200px;
+      text-align: center;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+ .caja:hover {
+      transform: scale(1.05);
+    }
+    
