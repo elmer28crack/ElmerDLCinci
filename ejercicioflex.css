@@ -1,14 +1,16 @@
 div.diuno {
-  background-color: rgb(9, 255, 0);
+  display: flex;
+  background-color: rgb(234, 253, 139);
       color: black(255, 255, 255);
       padding: 20px;
-      flex: 1 1 200px;
+      flex: 1 1 20px;
       text-align: center;
-      border-radius: 50px;
+      border-radius: 100px;
+      justify-content: space-around;
     
 }
 
-div.didos{
+/* div.didos{
   background-color: rgb(255, 0, 0);
       color: black(255, 255, 255);
       padding: 20px;
@@ -26,10 +28,12 @@ div.ditre{
       text-align: center;
       border-radius: 50px;
       transition: transform 0.3s ease;
-}
+} */
 
 
 body{
+  display: flex;
+   flex-direction: column;
 background-color: orange;
 
     color: black;
@@ -37,51 +41,57 @@ background-color: orange;
 
 footer{
     display: FLEX;
-flex-direction: column;
-align-content: center;
-background-color: aqua;
+    align-content: right;
+    flex-direction: column;
 
+text-align: end;
+background-color: rgb(3, 162, 162);
 }
 
 .titu{
   border-color: black;
 border-style: outset;
-   background-color: aqua;
- 
+   background-color: rgb(3, 162, 162);
+ border-width: 5px;
       color: rgb(255, 255, 255);
       padding: 10px;
-      flex: 1 1 200px;
+      flex: 1 1 90px;
       text-align: center;
       border-radius: 50px;
       transition: transform 0.3s ease;
-        text-shadow: 4px 4px 10px rgba(0,0,0,0.8);
+        text-shadow: 4px 4px 10px rgb(0, 0, 0);
 
 
 }
 
 .pie{
-
-   background-color: aqua;
-      color: rgb(255, 255, 255);
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+     background-color: rgb(158, 107, 5);
       padding: 20px;
-      flex: 1 1 200px;
+      gap: 20px;
+      border-radius: 70PX;
       text-align: center;
-      border-radius: 50px;
-      transition: transform 0.3s ease;
 
 
 }
 h3{
 
-border-color: black;
-border-style: outset;
-    background-color: aqua;
+    display: flex;
+          
+
+    border-color: black;
+    border-style: outset;
+    background-color: rgb(3, 162, 162);
       color: rgb(255, 255, 255);
       padding: 10px;
       flex: 1 1 200px;
-      text-align: center;
       border-radius: 50px;
       transition: transform 0.3s ease;
+    
     
 }
 
@@ -91,13 +101,30 @@ border-style: outset;
       flex-wrap: wrap;
       justify-content: space-around;
       align-items: center;
-     
+     background-color: rgb(158, 107, 5);
       padding: 20px;
       gap: 20px;
+      border-radius: 70PX;
+      text-align: center;
+    }
+
+      .contenedor2 {
+       
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      align-items: center;
+     background-color: rgb(158, 107, 5);
+      padding: 20px;
+      gap: 20px;
+      border-radius: 70PX;
+       text-align: center;
     }
 
       .caja {
-      background-color: aqua;
+   
+      background-color: rgb(3, 162, 162);
       color: white;
       padding: 20px;
       flex: 1 1 200px;
@@ -109,3 +136,22 @@ border-style: outset;
       transform: scale(1.05);
     }
     
+ 
+    .linki{
+
+    background-color: rgb(3, 162, 162);
+      color: white;
+      padding: 20px;
+      flex: 1 1 200px;
+      text-align: center;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .linki:hover{
+ transform: scale(1.05);
+
+    }
+    h2{
+
+      text-decoration: underline;
+    }
