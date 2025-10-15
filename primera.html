@@ -2,87 +2,86 @@
 <html lang="en">
 <head>
 
-    <title>La pagina de chanchito feliz</title>
-    <style>table,th,td{
-
-        border: 1px solid black;
-    }</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilojanken.css">
+    <title>Piedra, Papel o Tijera</title>
 </head>
 <body>
-  
-<table style="width: 300px;"> <!-- aqui empieza la tabla-->
-
-<thead>
-    <tr><th>Precio</th><th>Producto</th></tr>
-</thead>
-<tbody>
-    <tr><td> Cheetos</td><td> 15$</td> </tr>
-<tr><td> Refresco</td><td> 25$</td></tr>
-<tr><td> agua</td><td> 10$</td></tr></tbody>
-
-<tfoot>
-<td>total -></td>
-<td>precio total: 50$</td>
-</tfoot>
-</table> <!-- aqui termina la tabla-->
-
-
+    <div class="menu">
+            <ul class="menu-lista">
+                <li class="menu-item"><a href="/ChamchitoFelizVid/DOMHTML.HTML" class="menusito">Inicio</a></li>
+                <li class="menu-item"><a href="#dos" class="menusito">Ejercicios</a>
+                <ul class="sub-menu">
+                    <li class="ITEM"><a href="/javascript/paginawebcalculadora.html" id="calculadoras">Calculadora</a></li>
+                    <br>
+                    <li class="ITEM"><a href="/javascript/numerosprimos.html" id="numeros-primos">Numeros primos</a></li>
+                    <br>
+                    <li class="ITEM"><a href="/ElmerDLCinci/primera.html" id="piedra-papel-tijera">Piedra, Papel o Tijera</a></li>
+                </ul>
+                </li>
+                <li class="menu-item"><a href="#tres" class="menusito">Sobre nosotros</a></li>
+                <li class="menu-item"><a href="#cuatro" class="menusito">Articulos</a></li>
+                
+            </ul>
+        </div>
+   
+    <h1 contenteditable="false">Juego de Piedra, Papel o Tijera</h1>
+    <div class="datos">
+        <div class="introduccion" id="mostrar" style="display:none;">
+<p>¡Bienvenido al juego de Piedra, Papel o Tijera! Elige tu jugada y compite contra la computadora.</p>
+<p>az las del juego:</p>
+<iframe width="250" height="200" src="https://www.youtube.com/embed/FmCtxsSHsng?si=o6cge6oAO7P6SbgL" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 <ul>
-<li>asda</li>
-<li>asda</li>
-<li>asda</li>
-<li>asda</li>
-<li>asda</li>
+    <li>Piedra vence a Tijera</li>
+    <li>Tijera vence a Papel</li>
+    <li>Papel vence a Piedra</li>
+    <li>Si ambos eligen lo mismo, es un empate</li>
+    <li>El primer jugador en alcanzar 3 puntos gana la partida</li>
 </ul>
+</div>
+<button onclick="mostrarreglas()" class="boton" id="reg">mostrar Reglas</button>
 
-<ol>
-<li>asda</li>
-<li>asda</li>
-<li>asda</li>
-<li>asda</li>
-<li>asda</li>
-</ol>
+<div class="nombre" id="nombrediv">
+    
+<p>Ingresa tu nombre:</p>
+<input type="text" id="nombre" placeholder="Tu nombre">
+<button onclick="iniciarJuego()" class="boton" id="iniciar">Iniciar Juego</button>
+<p id="saludo"></p>
 
-
-<form action="/formulario" method="get">
-   
-   
-<label for="nombre">Nombre</label>
-<input id="nombre" name="Nombre" placeholder="Nombre">
+</div>
+    </div>
 
 
-<br>
-  <label for="apel">Apellido</label>
-<input type="text" id="apel" name="Apellido" placeholder="Apellido">
+    <div class="jugadas" id="elpepe">
+    <p>Elige tu jugada:</p>
 
-<br><br><br>
+    <div class="puntuaciones">
+    <p class="X">puntuacion:</p>
+    <p id="puntuacion">0</p>
+    <p class="Y">puntuacionPC:</p>
+    <p id="puntuacionpc">0</p>
+    <p id="resultado"></p>
+    <img src="https://cdn-icons-png.freepik.com/512/456/456212.png" alt="usuario" id="usuario">
+    <img src="https://cdn-icons-png.freepik.com/512/456/456212.png" alt="eleccion" id="eleccion">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfS2FxYrOZrMYarbwlJtJcB9AIvXVyvK5PBg&s" alt="eleccionpc" id="eleccionpc">
+       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTfS2FxYrOZrMYarbwlJtJcB9AIvXVyvK5PBg&s" alt="pc" id="pc">
+    </div>
+    <div class="imagenes">
+    <img src="imagenes/0.jpg" id="imgpiedra" alt="piedra" class="activo">
+    <img src="imagenes/1.jpg" id="imgpapel" alt="papel" class="activo">
+    <img src="imagenes/2.jpg" id="imgtijera" alt="tijera" class="activo">
+</div>
+    <button onclick="jugar(0)" class="boton" id="piedra">Piedra</button>
+    <button onclick="jugar(1)" class="boton" id="papel" >Papel</button>
+    <button onclick="jugar(2)" class="boton" id="tijera" >Tijera</button>
+</div>
+<img src="https://images.emojiterra.com/google/noto-emoji/unicode-16.0/color/1024px/1f3c6.png" id="trofeo" alt="trofeo" style="display: none;">
+<a id="textogana"></a>   
+<a id="textogana2"></a>   
+<p id="creditos">Hecho por Elmer Nicolas</p>
+<button onclick="location.reload();" id="reiniciar">Reiniciar Juego</button>
+<script src="javascript1w/variable.js"></script>
 
-<h4><label for="com">comentario</label></h4>
-<textarea name="comentario" placeholder="Aqui los comentarios" cols="50" rows="10" id="com"></textarea><br>
-
-
-<button type="submit">enviar</button>
-<button type="reset">borrar</button>
-<button type="button" >boton no hace nada
-
-</button>
-</form>
-
-<h1>Elmer</h1>
-<h2>Elmer</h2>
-<h3>Elmer</h3>
-<h4>Elmer</h4>
-<h5>Elmer</h5>
-<hr>
-
-<h1>Elmer</h1>
-
-<p>elpepe</p>
-<br>
-<p>Este tesxto <span style="color: blue;">Es azul aqui</span> pero no es un hipervinculo</p>
-<!---- esto es un comentario :)-->
-<a target="_blank" href="https://chatgpt.com/">Esto si es un hipervinculo(para ir a chatgpt)</a>
-<br>
-<img src="imagenes/mario.png" width="300" height="300">
 </body>
 </html>

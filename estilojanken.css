@@ -1,0 +1,294 @@
+.puntuaciones{
+    font-size: 40px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-shadow: 2px 2px 4px #000000;
+    border: 3px solid rgb(77, 176, 80);
+    padding: 1px;
+    text-align: right;
+  
+}
+
+.boton {
+
+    border: none;
+    color: white;
+    background-color: #4CAF50;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 40px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 12px;
+    font-family: 'Courier New', Courier, monospace, bold;
+width: 350px;
+height: 100px;
+}
+
+body{
+background-image: url("https://slidebazaar.com/wp-content/uploads/2024/08/Free-Professional-Background-PPT-Template.jpg");
+background-size: cover;
+
+}
+.jugadas{
+       display: flex;
+    flex-direction: row;
+    display: none;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+   
+}
+
+.boton:hover {
+    transform: scale(1.1);
+    transition: transform 0.2s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 60px;
+}
+#piedra{
+    background-image: url('https://torregris.com/wp-content/uploads/2017/08/PIEDRA-scaled.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.imagenes img {
+  position: absolute;
+  top: 0; 
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  display: none; 
+  max-width: 150px;
+  max-height: 150px;
+}
+.imagenes {
+  position: relative;
+  width: 100%;
+  height: 150px; 
+}
+
+
+.datos{
+
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+    ;
+}
+#nombre{
+    font-size: 40px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-shadow: 2px 2px 4px #000000;
+    border: 3px solid rgb(77, 176, 80);
+    padding: 10px;
+    text-align: center;
+}
+#iniciar{
+    background-color: rgb(77, 176, 80);
+    font-size: 30px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    height: 100px;
+    width: 200px;
+}
+ul{
+    list-style: none;
+}
+.introduccion{
+
+    text-decoration: none;
+    font-size: 20px;
+background-color: rgb(124, 164, 164);
+border-radius: 20px;
+border: #000000 solid 10px;
+background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTAXj6at-gtuBgkBvaZP5mV6H9M0-6x3WLkQg&s");
+background-size: cover;
+background-position: center;
+display: none;
+}
+/* #puntuacion{
+    font-size: 70px;
+    font-weight: bold;
+    color: #4CAF50;
+    text-shadow: 2px 2px 4px #000000;
+    border: 3px solid rgb(77, 176, 80);
+    padding: 10px;
+    text-align: right;
+} */
+#reg{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    height: 80px;
+    width: 120px;
+}
+#trofeo{
+    display: none;
+    width: 450px;
+    height: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#textogana{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 20px;
+}
+#textogana2{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 20px;
+}
+#creditos{
+    padding: 70px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 30px;
+    color: rgb(0, 0, 0);
+    text-shadow: 2px 2px 4px #000000;
+    margin-top: 20px;
+}
+#reiniciar{
+    background-color: rgb(77, 176, 80);
+    font-size: 40px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    color: white;
+    border: none;
+    height: 120px;
+    width: 250px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    display: none;
+}
+.body{
+        background-image: url("https://slidebazaar.com/wp-content/uploads/2024/08/Free-Professional-Background-PPT-Template.jpg");
+        background-size: cover;
+}
+
+.grande {
+    width: 80px;
+    height: 80px;
+    font-size: 24px;
+}
+
+#resultado {
+    font-size: 40px;
+}
+
+
+.calculadora
+{
+font: 20px Arial, sans-serif;
+
+}
+.pie{
+font: 15px Arial, sans-serif;
+}
+.menu-lista {
+    text-align: center;
+    background-color: rgb(90, 119, 119);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 30px;
+    border-radius: 10px;
+    
+}
+.menu-item{
+    
+    display: inline-block;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: rgb(164, 157, 157);
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s, color 0.3s;
+    
+}
+.menu-lista > li > a {
+    display: block;
+    text-decoration: none;
+
+}
+.menusito{
+    color: white;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    background-color: rgb(175, 188, 188);
+    list-style: none;
+    padding: 20px;
+    margin: 2px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+   
+    
+}
+.menu-item:hover .sub-menu {
+    display: block;
+}
+.ITEM:hover {
+   
+    background-color: rgb(157, 145, 145);
+    color: rgb(90, 119, 119);
+}
+.ITEM{
+    padding: 8px 12px;
+    border-radius: 3px;
+    transition: background-color 0.3s, color 0.3s;
+}
+p, button, h1, h2, h3, h4, h5, h6, a, li, img, body {
+  user-select: none; 
+  cursor: default;   
+}
+.puntuaciones img{
+    width: 170px;
+    height:170px;
+    margin-left: 150px;
+    
+}
+.activo {
+ height: 200px;
+ width: 200px;
+}
