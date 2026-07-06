@@ -1,12 +1,6 @@
 div.diuno {
-  display: flex;
-  background-color: rgb(234, 253, 139);
-      color: black(255, 255, 255);
-      padding: 20px;
-      flex: 1 1 20px;
-      text-align: center;
-      border-radius: 100px;
-      justify-content: space-around;
+background-color: grey;
+text-align: center;
     
 }
 
@@ -32,7 +26,7 @@ div.ditre{
 
 
 body{
-  background-image: url("https://slidebazaar.com/wp-content/uploads/2024/08/Free-Professional-Background-PPT-Template.jpg");
+    background-image: url("https://slidebazaar.com/wp-content/uploads/2024/08/Free-Professional-Background-PPT-Template.jpg");
   display: flex;
    flex-direction: column;
 background-color: orange;
@@ -81,10 +75,8 @@ border-style: outset;
 
 }
 h3{
-
+text-align: center;
     display: flex;
-          
-
     border-color: black;
     border-style: outset;
     background-color: rgb(3, 162, 162);
@@ -115,9 +107,9 @@ h3{
 
       .contenedor2 {
   font-style: arial;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
+      /* display: flex; */
+      /* flex-direction: row; */
+      /* flex-wrap: wrap; */
       justify-content: space-around;
       align-items: center;
      background-color:transparent;
